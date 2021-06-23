@@ -1,0 +1,8 @@
+image: "java:11-jdk"
+maven-test:
+    image: "maven:3-jdk-11"
+    script: "mvn test"
+    stage: test
+stages:
+    - test
+    - build
